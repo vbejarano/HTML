@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title> Bootcamp Visualization Dashboard </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
+    <!-- Navigation bar mobile display -->
+        <div class="row"> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navigation-bar" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="col-xs-9 phone-nav">
+                    <a class="navbar-brand" href="index.html" id="navigation-title">Lattitude</a>
+                </div>
+            </div>
+            <!-- Navigation bar links -->
+            <div class="collapse navbar-collapse" id="navigation-bar">
+                <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="max_temperature.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind_speed.html">Wind Speed</a></li>
+                        </ul>
+                </li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+                </ul>
+              </div>   
+            
+        </div>
+    </div>    
+</nav>
+
+<!--Comparison box-->
+<div class="container" style=background:white>
+    <div class="row">
+    <h2 class="single-title">Comparison: Latitude vs. X</h2>
+            <hr>
+    </div>
+            <p style="padding-bottom:10px; font-family: Arial, Helvetica, sans-serif; color:gray">Click any image to get an in-depth analysis.</p>
+
+            
+    <div class="row">       
+        <div class="col-md-6">
+            <p style="text-align:center; color:#4aaaa5; font-family:'Times New Roman', Times, serif;font-weight:bold; font-size: 20px; margin-left: auto; margin-right:auto;">vs. Max Temperature</p>
+            <a href="max_temperature.html"><img class="panel" src="Resources/Fig1.png" style="width:485px;height:435px; float:center;"></a>
+        </div> 
+     
+        <div class="col-md-6"></div>
+            <p style="text-align:center; color:#4aaaa5; font-family:'Times New Roman', Times, serif;font-weight:bold; font-size: 20px; margin-left: auto; margin-right: auto;">vs. Humidity</p>
+            <a href="humidity.html"><img class="panel" src="Resources/Fig2.png" style="width:485px;height:435px"></a>
+        </div> 
+    </div>           
+    
+
+<div class="container" style=background:white>
+    <div class="row"> 
+        <div class="col-md-6">
+            <p style="text-align:center; color:#4aaaa5; font-family:'Times New Roman', Times, serif;font-weight:bold; font-size: 20px; margin-left: auto; margin-right: auto;">vs. Cloudiness</p>
+            <a href="cloudiness.html"><img class="panel" src="Resources/Fig3.png" style="width:485px;height:435px"></a>
+        </div>
+
+        <div class="col-md-6">
+            <p style="text-align:center; color:#4aaaa5; font-family:'Times New Roman', Times, serif;font-weight:bold; font-size: 20px; margin-left: auto; margin-right: auto;">vs. Wind Speed</p>
+            <a href="wind_speed.html"><img class="panel" src="Resources/Fig4.png" style="width:485px;height:435px"></a>
+        </div>    
+    </div>
+</div>    
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>        
+    
+
+</body>
+    
+    
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
